@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/create-edit.css"> <!-- Lien vers ton fichier CSS -->
+        <script src="./scripts/editMovie.js" defer></script>
+    </head>
+    <body>
+
+        <div class="titre">
+            <h1>Edit the movie</h1>
+        </div>
+        <form action="/movies" method="PUT" id="editMovieForm">
+            <label for="Poster_Link">Lien vers l'affiche :</label> 
+            <input type="text" id="Poster_Link" name="Poster_Link"><p/>
+            <label for="Series_Title">Titre :</label> 
+            <input type="text" id="Series_Title" name="Series_Title"><p/>
+            <label for="Released_Year">Année :</label> 
+            <input type="text" id="Released_Year" name="Released_Year"><p/>
+            <label for="Certificate">Classement :</label> 
+            <input type="text" id="Certificate" name="Certificate"><p/>
+            <label for="Runtime">Durée en minutes :</label> 
+            <input type="text" id="Runtime" name="Runtime"><p/>
+            <label for="Genre">Genre :</label> 
+            <input type="text" id="Genre" name="Genre"><p/>
+            <label for="IMDB_Rating">Evaluation sur 10 :</label> 
+            <input type="text" id="IMDB_Rating" name="IMDB_Rating"><p/>
+            <label for="Overview">Résumé :</label> 
+            <input type="text" id="Overview" name="Overview"><p/>
+            <label for="Meta_score">Score sur 100 :</label> 
+            <input type="text" id="Meta_score" name="Meta_score"><p/>
+            <label for="Director">Réalisateur :</label> 
+            <input type="text" id="Director" name="Director"><p/>
+            <label for="Star1">Acteur :</label> 
+            <input type="text" id="Star1" name="Star1"><p/>
+            <label for="Star2">Acteur :</label> 
+            <input type="text" id="Star2" name="Star2"><p/>
+            <label for="Star3">Acteur :</label> 
+            <input type="text" id="Star3" name="Star3"><p/>
+            <label for="Star4">Acteur :</label> 
+            <input type="text" id="Star4" name="Star4"><p/>
+            <label for="No_of_Votes">Nombre de votes :</label> 
+            <input type="text" id="No_of_Votes" name="No_of_Votes"><p/>
+            <label for="Gross">Gains en $ :</label> 
+            <input type="text" id="Gross" name="Gross"><p/>
+            <button type="submit" id="updateButton">Modifier</button>
+            <button type="button" id="cancelButton">Annuler</button>
+        </form>
+    </body>
+</html>
